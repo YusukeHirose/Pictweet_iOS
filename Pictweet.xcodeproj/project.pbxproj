@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DDB168BDD2429F16C028A29 /* Pods_Pictweet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E7F9B411D4245D927C5BE5 /* Pods_Pictweet.framework */; };
+		CE50DADE2020563200520580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50DADD2020563200520580 /* AppDelegate.swift */; };
+		CE50DAE02020563200520580 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50DADF2020563200520580 /* ViewController.swift */; };
+		CE50DAE32020563200520580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE50DAE12020563200520580 /* Main.storyboard */; };
+		CE50DAE52020563200520580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE50DAE42020563200520580 /* Assets.xcassets */; };
+		CE50DAE82020563200520580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE50DAE62020563200520580 /* LaunchScreen.storyboard */; };
+		CE50DAF42020598900520580 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = CE50DAEF2020598800520580 /* camera.png */; };
+		CE50DAF52020598900520580 /* library.png in Resources */ = {isa = PBXBuildFile; fileRef = CE50DAF02020598800520580 /* library.png */; };
+		CE50DAF62020598900520580 /* pen.png in Resources */ = {isa = PBXBuildFile; fileRef = CE50DAF12020598800520580 /* pen.png */; };
+		CE50DAF72020598900520580 /* Start.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE50DAF22020598900520580 /* Start.jpg */; };
+		CE50DAF82020598900520580 /* human.png in Resources */ = {isa = PBXBuildFile; fileRef = CE50DAF32020598900520580 /* human.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		579E74B8213D7FE96C5E81F2 /* Pods-Pictweet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pictweet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pictweet/Pods-Pictweet.debug.xcconfig"; sourceTree = "<group>"; };
+		6DEA67BE91613DB60787B452 /* Pods-Pictweet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pictweet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pictweet/Pods-Pictweet.release.xcconfig"; sourceTree = "<group>"; };
+		CE50DADA2020563200520580 /* Pictweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pictweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE50DADD2020563200520580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE50DADF2020563200520580 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE50DAE22020563200520580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE50DAE42020563200520580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE50DAE72020563200520580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE50DAE92020563200520580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE50DAEF2020598800520580 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		CE50DAF02020598800520580 /* library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library.png; sourceTree = "<group>"; };
+		CE50DAF12020598800520580 /* pen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pen.png; sourceTree = "<group>"; };
+		CE50DAF22020598900520580 /* Start.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Start.jpg; sourceTree = "<group>"; };
+		CE50DAF32020598900520580 /* human.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = human.png; sourceTree = "<group>"; };
+		D7E7F9B411D4245D927C5BE5 /* Pods_Pictweet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pictweet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE50DAD72020563200520580 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DDB168BDD2429F16C028A29 /* Pods_Pictweet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77160D2CBE3D23BA74431F9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7E7F9B411D4245D927C5BE5 /* Pods_Pictweet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE50DAD12020563200520580 = {
+			isa = PBXGroup;
+			children = (
+				CE50DADC2020563200520580 /* Pictweet */,
+				CE50DADB2020563200520580 /* Products */,
+				D9609720DA179E80D60C6B4B /* Pods */,
+				77160D2CBE3D23BA74431F9D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE50DADB2020563200520580 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE50DADA2020563200520580 /* Pictweet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE50DADC2020563200520580 /* Pictweet */ = {
+			isa = PBXGroup;
+			children = (
+				CE50DADD2020563200520580 /* AppDelegate.swift */,
+				CE50DADF2020563200520580 /* ViewController.swift */,
+				CE50DAE12020563200520580 /* Main.storyboard */,
+				CE50DAEF2020598800520580 /* camera.png */,
+				CE50DAF32020598900520580 /* human.png */,
+				CE50DAF02020598800520580 /* library.png */,
+				CE50DAF12020598800520580 /* pen.png */,
+				CE50DAF22020598900520580 /* Start.jpg */,
+				CE50DAE42020563200520580 /* Assets.xcassets */,
+				CE50DAE62020563200520580 /* LaunchScreen.storyboard */,
+				CE50DAE92020563200520580 /* Info.plist */,
+			);
+			path = Pictweet;
+			sourceTree = "<group>";
+		};
+		D9609720DA179E80D60C6B4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				579E74B8213D7FE96C5E81F2 /* Pods-Pictweet.debug.xcconfig */,
+				6DEA67BE91613DB60787B452 /* Pods-Pictweet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE50DAD92020563200520580 /* Pictweet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE50DAEC2020563200520580 /* Build configuration list for PBXNativeTarget "Pictweet" */;
+			buildPhases = (
+				6624E69A4AD04314983EFEC3 /* [CP] Check Pods Manifest.lock */,
+				CE50DAD62020563200520580 /* Sources */,
+				CE50DAD72020563200520580 /* Frameworks */,
+				CE50DAD82020563200520580 /* Resources */,
+				79335A540FD49DB6C5A2A804 /* [CP] Embed Pods Frameworks */,
+				1DDEBB899EF048FA96154622 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pictweet;
+			productName = Pictweet;
+			productReference = CE50DADA2020563200520580 /* Pictweet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE50DAD22020563200520580 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = User;
+				TargetAttributes = {
+					CE50DAD92020563200520580 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CE50DAD52020563200520580 /* Build configuration list for PBXProject "Pictweet" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE50DAD12020563200520580;
+			productRefGroup = CE50DADB2020563200520580 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE50DAD92020563200520580 /* Pictweet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE50DAD82020563200520580 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE50DAF52020598900520580 /* library.png in Resources */,
+				CE50DAE82020563200520580 /* LaunchScreen.storyboard in Resources */,
+				CE50DAF72020598900520580 /* Start.jpg in Resources */,
+				CE50DAE52020563200520580 /* Assets.xcassets in Resources */,
+				CE50DAF62020598900520580 /* pen.png in Resources */,
+				CE50DAF82020598900520580 /* human.png in Resources */,
+				CE50DAF42020598900520580 /* camera.png in Resources */,
+				CE50DAE32020563200520580 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DDEBB899EF048FA96154622 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pictweet/Pods-Pictweet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6624E69A4AD04314983EFEC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pictweet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79335A540FD49DB6C5A2A804 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pictweet/Pods-Pictweet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NCMB/NCMB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NCMB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pictweet/Pods-Pictweet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE50DAD62020563200520580 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE50DAE02020563200520580 /* ViewController.swift in Sources */,
+				CE50DADE2020563200520580 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE50DAE12020563200520580 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE50DAE22020563200520580 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE50DAE62020563200520580 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE50DAE72020563200520580 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE50DAEA2020563200520580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE50DAEB2020563200520580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE50DAED2020563200520580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 579E74B8213D7FE96C5E81F2 /* Pods-Pictweet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4U625YVHAN;
+				INFOPLIST_FILE = Pictweet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusukehirose.Pictweet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE50DAEE2020563200520580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DEA67BE91613DB60787B452 /* Pods-Pictweet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4U625YVHAN;
+				INFOPLIST_FILE = Pictweet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusukehirose.Pictweet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE50DAD52020563200520580 /* Build configuration list for PBXProject "Pictweet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE50DAEA2020563200520580 /* Debug */,
+				CE50DAEB2020563200520580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE50DAEC2020563200520580 /* Build configuration list for PBXNativeTarget "Pictweet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE50DAED2020563200520580 /* Debug */,
+				CE50DAEE2020563200520580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE50DAD22020563200520580 /* Project object */;
+}
