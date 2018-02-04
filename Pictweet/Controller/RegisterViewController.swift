@@ -39,7 +39,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             if let errorMessage = (error as NSError?)?.userInfo["NSLocalizedDescription"] as? String {
                 self.showAlert(message: errorMessage)
             } else {
-                print("登録成功")
+                self.performSegue(withIdentifier: "toTimeLineFromRegister", sender: self)
             }
         }
     }

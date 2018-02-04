@@ -130,6 +130,55 @@
             </objects>
             <point key="canvasLocation" x="-652" y="150"/>
         </scene>
+        <!--Pictweet-->
+        <scene sceneID="ilx-k8-79X">
+            <objects>
+                <tableViewController id="bDu-uU-t4A" customClass="TimeLineTableViewController" customModule="Pictweet" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oZ4-1l-iUS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="t4U-ix-0qT">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t4U-ix-0qT" id="gXl-A5-bmA">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bDu-uU-t4A" id="3l7-dP-xy3"/>
+                            <outlet property="delegate" destination="bDu-uU-t4A" id="2Fb-rh-XGf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Pictweet" id="pNU-78-IWN"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cRM-sw-BEj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="-537"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xfv-HZ-Dyb">
+            <objects>
+                <navigationController id="e49-WF-jl7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ACQ-qW-hP3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bDu-uU-t4A" kind="relationship" relationship="rootViewController" id="tiQ-8Y-0Jl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s8Y-Wu-U86" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="156" y="-537"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="xp8-NL-VMd">
             <objects>
@@ -255,6 +304,7 @@
                         <outlet property="emailTextField" destination="8mx-kd-Lqo" id="5CV-6X-vMu"/>
                         <outlet property="passwordTextField" destination="t02-xs-zOk" id="aqo-Eg-cxu"/>
                         <outlet property="userNameTextField" destination="fnv-X6-ZgH" id="vcI-5h-lFM"/>
+                        <segue destination="e49-WF-jl7" kind="presentation" identifier="toTimeLineFromRegister" id="uJP-9I-kDN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yKA-OI-eWM" userLabel="First Responder" sceneMemberID="firstResponder"/>
