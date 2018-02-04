@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9DDB168BDD2429F16C028A29 /* Pods_Pictweet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E7F9B411D4245D927C5BE5 /* Pods_Pictweet.framework */; };
 		CE50DADE2020563200520580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50DADD2020563200520580 /* AppDelegate.swift */; };
 		CE50DAE02020563200520580 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50DADF2020563200520580 /* ViewController.swift */; };
 		CE50DAE32020563200520580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE50DAE12020563200520580 /* Main.storyboard */; };
@@ -18,11 +17,14 @@
 		CE50DAF62020598900520580 /* pen.png in Resources */ = {isa = PBXBuildFile; fileRef = CE50DAF12020598800520580 /* pen.png */; };
 		CE50DAF72020598900520580 /* Start.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE50DAF22020598900520580 /* Start.jpg */; };
 		CE50DAF82020598900520580 /* human.png in Resources */ = {isa = PBXBuildFile; fileRef = CE50DAF32020598900520580 /* human.png */; };
+		CE9027E72021EFEF0043BFCE /* NCMB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9027E82021EFEF0043BFCE /* NCMB.framework */; };
+		DFCA2149FDF61478A10FA457 /* Pods_Pictweet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF058BCF891C73913BD811A /* Pods_Pictweet.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		579E74B8213D7FE96C5E81F2 /* Pods-Pictweet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pictweet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pictweet/Pods-Pictweet.debug.xcconfig"; sourceTree = "<group>"; };
 		6DEA67BE91613DB60787B452 /* Pods-Pictweet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pictweet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pictweet/Pods-Pictweet.release.xcconfig"; sourceTree = "<group>"; };
+		CE4FF2252020762400026F5E /* Pictweet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pictweet-Bridging-Header.h"; sourceTree = "<group>"; };
 		CE50DADA2020563200520580 /* Pictweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pictweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE50DADD2020563200520580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE50DADF2020563200520580 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,7 +37,8 @@
 		CE50DAF12020598800520580 /* pen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pen.png; sourceTree = "<group>"; };
 		CE50DAF22020598900520580 /* Start.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Start.jpg; sourceTree = "<group>"; };
 		CE50DAF32020598900520580 /* human.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = human.png; sourceTree = "<group>"; };
-		D7E7F9B411D4245D927C5BE5 /* Pods_Pictweet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pictweet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9027E82021EFEF0043BFCE /* NCMB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NCMB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF058BCF891C73913BD811A /* Pods_Pictweet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pictweet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DDB168BDD2429F16C028A29 /* Pods_Pictweet.framework in Frameworks */,
+				CE9027E72021EFEF0043BFCE /* NCMB.framework in Frameworks */,
+				DFCA2149FDF61478A10FA457 /* Pods_Pictweet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +57,8 @@
 		77160D2CBE3D23BA74431F9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D7E7F9B411D4245D927C5BE5 /* Pods_Pictweet.framework */,
+				CE9027E82021EFEF0043BFCE /* NCMB.framework */,
+				FBF058BCF891C73913BD811A /* Pods_Pictweet.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -90,6 +95,7 @@
 				CE50DAE42020563200520580 /* Assets.xcassets */,
 				CE50DAE62020563200520580 /* LaunchScreen.storyboard */,
 				CE50DAE92020563200520580 /* Info.plist */,
+				CE4FF2252020762400026F5E /* Pictweet-Bridging-Header.h */,
 			);
 			path = Pictweet;
 			sourceTree = "<group>";
@@ -312,7 +318,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -363,7 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -379,9 +385,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4U625YVHAN;
 				INFOPLIST_FILE = Pictweet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yusukehirose.Pictweet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/user/Desktop/MyiOS/Pictweet/Pictweet/Pictweet-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -395,9 +403,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4U625YVHAN;
 				INFOPLIST_FILE = Pictweet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yusukehirose.Pictweet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/user/Desktop/MyiOS/Pictweet/Pictweet/Pictweet-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
