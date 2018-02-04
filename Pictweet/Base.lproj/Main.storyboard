@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pictweet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="Pictweet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,6 +77,9 @@
                                         <state key="normal" title="LOGIN">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="didTapLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UHS-TJ-tTP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBG-qU-A5P">
                                         <rect key="frame" x="42" y="583" width="291" height="44"/>
@@ -89,6 +92,9 @@
                                         <state key="normal" title="REGISTER">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="didTapRegisterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Qp-Ad-WkE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
@@ -123,7 +129,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="Raw-XT-RaJ" kind="presentation" id="GjS-aL-WRK"/>
+                        <outlet property="passwordTextField" destination="vKW-nJ-IZu" id="ATY-0f-J0E"/>
+                        <outlet property="userNameTextField" destination="oAv-fc-QJQ" id="K6M-fG-hRd"/>
+                        <segue destination="Raw-XT-RaJ" kind="presentation" identifier="toRegisterFromStart" id="GjS-aL-WRK"/>
+                        <segue destination="e49-WF-jl7" kind="presentation" identifier="toTimeLineFromStart" modalTransitionStyle="flipHorizontal" id="Izy-yp-ewq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -315,4 +324,7 @@
     <resources>
         <image name="Start.jpg" width="320" height="568"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Izy-yp-ewq"/>
+    </inferredMetricsTieBreakers>
 </document>

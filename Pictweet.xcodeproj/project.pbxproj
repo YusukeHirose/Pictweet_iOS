@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CE50DADE2020563200520580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50DADD2020563200520580 /* AppDelegate.swift */; };
-		CE50DAE02020563200520580 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50DADF2020563200520580 /* ViewController.swift */; };
 		CE50DAE32020563200520580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE50DAE12020563200520580 /* Main.storyboard */; };
 		CE50DAE52020563200520580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE50DAE42020563200520580 /* Assets.xcassets */; };
 		CE50DAE82020563200520580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE50DAE62020563200520580 /* LaunchScreen.storyboard */; };
@@ -21,6 +20,7 @@
 		CEB63C412026C2A700B21A64 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB63C402026C2A700B21A64 /* RegisterViewController.swift */; };
 		CEB63C432026C2BB00B21A64 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB63C422026C2BB00B21A64 /* User.swift */; };
 		CEB63C492026CC5F00B21A64 /* TimeLineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB63C482026CC5F00B21A64 /* TimeLineTableViewController.swift */; };
+		CEB63C4B2026D5BC00B21A64 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB63C4A2026D5BC00B21A64 /* StartViewController.swift */; };
 		DFCA2149FDF61478A10FA457 /* Pods_Pictweet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF058BCF891C73913BD811A /* Pods_Pictweet.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
@@ -30,7 +30,6 @@
 		CE4FF2252020762400026F5E /* Pictweet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pictweet-Bridging-Header.h"; sourceTree = "<group>"; };
 		CE50DADA2020563200520580 /* Pictweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pictweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE50DADD2020563200520580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE50DADF2020563200520580 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE50DAE22020563200520580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE50DAE42020563200520580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE50DAE72020563200520580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +43,7 @@
 		CEB63C402026C2A700B21A64 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CEB63C422026C2BB00B21A64 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CEB63C482026CC5F00B21A64 /* TimeLineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewController.swift; sourceTree = "<group>"; };
+		CEB63C4A2026D5BC00B21A64 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		FBF058BCF891C73913BD811A /* Pods_Pictweet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pictweet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,7 +107,7 @@
 		CEB63C442026C2C800B21A64 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CE50DADF2020563200520580 /* ViewController.swift */,
+				CEB63C4A2026D5BC00B21A64 /* StartViewController.swift */,
 				CEB63C482026CC5F00B21A64 /* TimeLineTableViewController.swift */,
 				CEB63C402026C2A700B21A64 /* RegisterViewController.swift */,
 			);
@@ -284,10 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB63C4B2026D5BC00B21A64 /* StartViewController.swift in Sources */,
 				CEB63C492026CC5F00B21A64 /* TimeLineTableViewController.swift in Sources */,
 				CEB63C432026C2BB00B21A64 /* User.swift in Sources */,
 				CEB63C412026C2A700B21A64 /* RegisterViewController.swift in Sources */,
-				CE50DAE02020563200520580 /* ViewController.swift in Sources */,
 				CE50DADE2020563200520580 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
