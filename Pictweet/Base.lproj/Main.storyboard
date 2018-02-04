@@ -82,7 +82,7 @@
                                         <rect key="frame" x="42" y="583" width="291" height="44"/>
                                         <color key="backgroundColor" red="0.45098039220000002" green="0.98039215690000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="4r1-cq-TqK"/>
+                                            <constraint firstAttribute="height" constant="44" id="FMO-fo-d2F"/>
                                             <constraint firstAttribute="width" constant="291" id="mVc-iY-UGa"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -98,10 +98,8 @@
                                     <constraint firstItem="QfG-pa-4Ao" firstAttribute="top" secondItem="732-OM-xEV" secondAttribute="top" constant="100" id="Fs7-Pd-xcT"/>
                                     <constraint firstItem="vKW-nJ-IZu" firstAttribute="top" secondItem="oAv-fc-QJQ" secondAttribute="bottom" constant="13" id="Qg2-1P-odF"/>
                                     <constraint firstItem="oAv-fc-QJQ" firstAttribute="centerX" secondItem="732-OM-xEV" secondAttribute="centerX" id="RA2-Lw-97R"/>
-                                    <constraint firstAttribute="bottom" secondItem="eBG-qU-A5P" secondAttribute="bottom" constant="40" id="TBz-p7-daU"/>
                                     <constraint firstItem="oAv-fc-QJQ" firstAttribute="top" secondItem="0R7-5n-hix" secondAttribute="bottom" constant="190" id="THg-M1-j8V"/>
                                     <constraint firstItem="mXL-4i-BuJ" firstAttribute="centerX" secondItem="732-OM-xEV" secondAttribute="centerX" id="Xxo-Q0-cfs"/>
-                                    <constraint firstItem="eBG-qU-A5P" firstAttribute="centerX" secondItem="732-OM-xEV" secondAttribute="centerX" id="a4Y-oR-1xc"/>
                                     <constraint firstItem="mXL-4i-BuJ" firstAttribute="centerX" secondItem="732-OM-xEV" secondAttribute="centerX" id="c2F-Rl-Ph6"/>
                                     <constraint firstItem="0R7-5n-hix" firstAttribute="leading" secondItem="732-OM-xEV" secondAttribute="leading" constant="60" id="cUc-WF-mcZ"/>
                                     <constraint firstItem="0R7-5n-hix" firstAttribute="top" secondItem="QfG-pa-4Ao" secondAttribute="bottom" constant="5" id="izC-sp-sCe"/>
@@ -127,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-734" y="151"/>
+            <point key="canvasLocation" x="-652" y="150"/>
         </scene>
     </scenes>
     <resources>
