@@ -12,12 +12,12 @@ class TimeLineTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "投稿", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.toPost))
+        self.navigationItem.rightBarButtonItem?.image = UIImage(named: "pen.png")
+    }
+    
+    @objc func toPost() {
+        self.performSegue(withIdentifier: "toPostViewController", sender: nil)
     }
 
     override func didReceiveMemoryWarning() {

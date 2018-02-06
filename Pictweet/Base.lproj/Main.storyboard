@@ -165,7 +165,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Pictweet" id="pNU-78-IWN"/>
                     <connections>
-                        <segue destination="6N2-Hc-gQn" kind="show" id="EZ8-tT-Pgm"/>
+                        <segue destination="6N2-Hc-gQn" kind="show" identifier="toPostViewController" id="EZ8-tT-Pgm"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRM-sw-BEj" userLabel="First Responder" sceneMemberID="firstResponder"/>
