@@ -185,6 +185,7 @@
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hA6-jT-fet">
                                         <rect key="frame" x="16" y="8" width="343" height="240"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="hA6-jT-fet" secondAttribute="height" multiplier="343:240" id="3YN-Ht-dHh"/>
                                         </constraints>
