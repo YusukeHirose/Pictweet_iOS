@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE1D2B1120299AD4003ADAA6 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D2B1020299AD4003ADAA6 /* PostViewController.swift */; };
+		CE2B3508202E0176008E183C /* DonePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B3507202E0176008E183C /* DonePostViewController.swift */; };
 		CE50DADE2020563200520580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50DADD2020563200520580 /* AppDelegate.swift */; };
 		CE50DAE32020563200520580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE50DAE12020563200520580 /* Main.storyboard */; };
 		CE50DAE52020563200520580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE50DAE42020563200520580 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		579E74B8213D7FE96C5E81F2 /* Pods-Pictweet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pictweet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pictweet/Pods-Pictweet.debug.xcconfig"; sourceTree = "<group>"; };
 		6DEA67BE91613DB60787B452 /* Pods-Pictweet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pictweet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pictweet/Pods-Pictweet.release.xcconfig"; sourceTree = "<group>"; };
 		CE1D2B1020299AD4003ADAA6 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		CE2B3507202E0176008E183C /* DonePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonePostViewController.swift; sourceTree = "<group>"; };
 		CE4FF2252020762400026F5E /* Pictweet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pictweet-Bridging-Header.h"; sourceTree = "<group>"; };
 		CE50DADA2020563200520580 /* Pictweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pictweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE50DADD2020563200520580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				CEB63C482026CC5F00B21A64 /* TimeLineTableViewController.swift */,
 				CEB63C402026C2A700B21A64 /* RegisterViewController.swift */,
 				CE1D2B1020299AD4003ADAA6 /* PostViewController.swift */,
+				CE2B3507202E0176008E183C /* DonePostViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			files = (
 				CE1D2B1120299AD4003ADAA6 /* PostViewController.swift in Sources */,
 				CEB63C4B2026D5BC00B21A64 /* StartViewController.swift in Sources */,
+				CE2B3508202E0176008E183C /* DonePostViewController.swift in Sources */,
 				CEB63C492026CC5F00B21A64 /* TimeLineTableViewController.swift in Sources */,
 				CEB63C432026C2BB00B21A64 /* User.swift in Sources */,
 				CEB63C412026C2A700B21A64 /* RegisterViewController.swift in Sources */,

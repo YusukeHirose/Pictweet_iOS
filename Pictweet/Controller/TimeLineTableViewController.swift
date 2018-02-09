@@ -14,6 +14,7 @@ class TimeLineTableViewController: UITableViewController {
         super.viewDidLoad()
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "投稿", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.toPost))
         self.navigationItem.rightBarButtonItem?.image = UIImage(named: "pen.png")
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Cancel", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
     }
     
     @objc func toPost() {
