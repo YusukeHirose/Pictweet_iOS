@@ -175,7 +175,7 @@
         <!--Post-->
         <scene sceneID="X9j-XB-qLp">
             <objects>
-                <viewController title="Post" id="6N2-Hc-gQn" sceneMemberID="viewController">
+                <viewController title="Post" id="6N2-Hc-gQn" customClass="PostViewController" customModule="Pictweet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i8c-FO-gQw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,6 +196,9 @@
                                             <constraint firstAttribute="width" secondItem="JEA-Kj-kba" secondAttribute="height" multiplier="1:1" id="QXa-Eb-jYZ"/>
                                         </constraints>
                                         <state key="normal" image="camera.png"/>
+                                        <connections>
+                                            <action selector="didTapCameraButton:" destination="6N2-Hc-gQn" eventType="touchUpInside" id="cCN-0O-fn2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvI-Ol-pY6">
                                         <rect key="frame" x="232" y="256" width="48" height="48"/>
@@ -261,6 +264,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="i5R-7a-7J6"/>
                     </view>
+                    <connections>
+                        <outlet property="postImageView" destination="hA6-jT-fet" id="VWo-ii-AYE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Jl-V1-Xlz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
