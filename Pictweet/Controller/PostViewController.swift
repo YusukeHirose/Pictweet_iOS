@@ -12,9 +12,13 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
     
     @IBOutlet weak var postImageView: UIImageView!
     
+    @IBOutlet weak var commentTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    
+        commentTextView.layer.borderWidth = 1
+        commentTextView.layer.cornerRadius = 2
 
     }
     

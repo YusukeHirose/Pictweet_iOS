@@ -268,6 +268,7 @@
                         <viewLayoutGuide key="safeArea" id="i5R-7a-7J6"/>
                     </view>
                     <connections>
+                        <outlet property="commentTextView" destination="rHu-iW-EqI" id="5QK-sm-Cl6"/>
                         <outlet property="postImageView" destination="hA6-jT-fet" id="VWo-ii-AYE"/>
                     </connections>
                 </viewController>
