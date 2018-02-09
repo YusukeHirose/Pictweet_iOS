@@ -270,6 +270,9 @@
                     <connections>
                         <outlet property="commentTextView" destination="rHu-iW-EqI" id="5QK-sm-Cl6"/>
                         <outlet property="postImageView" destination="hA6-jT-fet" id="VWo-ii-AYE"/>
+                        <outlet property="postScrollView" destination="JjZ-X4-fd9" id="17G-3Z-Mg4"/>
+                        <outlet property="selectMessageLabel" destination="e7h-Jp-mv9" id="QIM-bC-Luk"/>
+                        <outlet property="sendButton" destination="aAp-og-X2P" id="rUW-UO-aAp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Jl-V1-Xlz" userLabel="First Responder" sceneMemberID="firstResponder"/>
