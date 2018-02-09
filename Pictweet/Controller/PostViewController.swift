@@ -29,6 +29,17 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
         }
     }
     
+    @IBAction func didTapLibraryButton(_ sender: UIButton) {
+        let sourceType = UIImagePickerControllerSourceType.photoLibrary
+        if UIImagePickerController.isSourceTypeAvailable(sourceType) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.sourceType = sourceType
+            imagePicker.delegate = self
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             postImageView.image = pickedImage
