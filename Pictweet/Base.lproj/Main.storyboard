@@ -229,6 +229,7 @@
                                         <state key="normal" title="SEND"/>
                                         <connections>
                                             <action selector="didTapSendButton:" destination="6N2-Hc-gQn" eventType="touchUpInside" id="DO3-cm-4Ly"/>
+                                            <segue destination="aW3-OH-Kon" kind="show" id="j9J-Xj-OJS"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="画像を選択してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7h-Jp-mv9">
@@ -281,6 +282,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Jl-V1-Xlz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1654" y="-537"/>
+        </scene>
+        <!--Done-->
+        <scene sceneID="owZ-N8-fXr">
+            <objects>
+                <viewController title="Done" id="aW3-OH-Kon" customClass="PostedViewController" customModule="Pictweet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bbt-oY-EE6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投稿しました。" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWq-zA-1Rf">
+                                <rect key="frame" x="116" y="144" width="143" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="tHU-a8-Vrl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.58823529409999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dw8-NL-iMX">
+                                <rect key="frame" x="16" y="318" width="343" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4Ib-h8-Ivg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="TimeLineへ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="e49-WF-jl7" kind="show" id="GwC-Fv-9Nx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dw8-NL-iMX" firstAttribute="leading" secondItem="575-mZ-yLi" secondAttribute="leading" constant="16" id="AXT-H6-mCU"/>
+                            <constraint firstItem="eWq-zA-1Rf" firstAttribute="top" secondItem="575-mZ-yLi" secondAttribute="top" constant="80" id="Ik2-Vz-Xg6"/>
+                            <constraint firstItem="eWq-zA-1Rf" firstAttribute="leading" secondItem="575-mZ-yLi" secondAttribute="leading" constant="116" id="eac-PZ-ZVe"/>
+                            <constraint firstItem="575-mZ-yLi" firstAttribute="trailing" secondItem="dw8-NL-iMX" secondAttribute="trailing" constant="16" id="fFg-G3-9PB"/>
+                            <constraint firstItem="dw8-NL-iMX" firstAttribute="top" secondItem="eWq-zA-1Rf" secondAttribute="bottom" constant="153" id="k3G-Ky-aWk"/>
+                            <constraint firstItem="575-mZ-yLi" firstAttribute="trailing" secondItem="eWq-zA-1Rf" secondAttribute="trailing" constant="116" id="qGR-Eu-tP8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="575-mZ-yLi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="32M-sy-L9S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2468" y="-537"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xfv-HZ-Dyb">
@@ -441,7 +490,7 @@
         <image name="library.png" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uJP-9I-kDN"/>
+        <segue reference="GwC-Fv-9Nx"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

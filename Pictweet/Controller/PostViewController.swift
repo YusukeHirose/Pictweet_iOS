@@ -93,7 +93,6 @@ class PostViewController: UIViewController {
         let storyboard: UIStoryboard = self.storyboard!
         let nextView = storyboard.instantiateViewController(withIdentifier: "navi")
         self.present(nextView, animated: true, completion: nil)
-
     }
     
 }
