@@ -9,7 +9,7 @@
 import UIKit
 import NCMB
 
-class PostViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class PostViewController: UIViewController {
     
     @IBOutlet weak var postImageView: UIImageView!
     @IBOutlet weak var commentTextView: UITextView!
@@ -46,20 +46,6 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
             imagePicker.delegate = self
             self.present(imagePicker, animated: true, completion: nil)
         }
-    }
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            postImageView.image = pickedImage
-            postImageView.backgroundColor = UIColor.clear
-            selectMessageLabel.isHidden = true
-            sendButton.isHidden = false
-        }
-        picker.dismiss(animated: true, completion: nil)
-    }
-    
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        picker.dismiss(animated: true, completion: nil)
     }
     
     //キーボードが表示されたときに呼ばれるメソッド
@@ -108,6 +94,24 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
         let nextView = storyboard.instantiateViewController(withIdentifier: "navi")
         self.present(nextView, animated: true, completion: nil)
 
+    }
+    
+}
+
+extension PostViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            postImageView.image = pickedImage
+            postImageView.backgroundColor = UIColor.clear
+            selectMessageLabel.isHidden = true
+            sendButton.isHidden = false
+        }
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
     }
     
 }
