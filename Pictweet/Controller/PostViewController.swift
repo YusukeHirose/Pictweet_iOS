@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NCMB
 
 class PostViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
@@ -24,11 +25,10 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
         //キーボードが出現or消滅した際の通知先を設定
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: .UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: .UIKeyboardWillHide, object: nil)
-
+        sendButton.isHidden = true
     }
     
     @IBAction func didTapCameraButton(_ sender: UIButton) {
-        
         let sourceType = UIImagePickerControllerSourceType.camera
         if UIImagePickerController.isSourceTypeAvailable(sourceType) {
             let imagePicker = UIImagePickerController()
@@ -48,12 +48,12 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
         }
     }
     
-    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             postImageView.image = pickedImage
             postImageView.backgroundColor = UIColor.clear
             selectMessageLabel.isHidden = true
+            sendButton.isHidden = false
         }
         picker.dismiss(animated: true, completion: nil)
     }
@@ -82,5 +82,32 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
         postScrollView.scrollIndicatorInsets = .zero
     }
     
+    @IBAction func didTapSendButton(_ sender: UIButton) {
+        if let image = postImageView.image {
+            //postImageブランチでは1になっていると思いますが、0.1にしてください。
+            let data = UIImageJPEGRepresentation(image, 0.1)
+            let fileName = NSUUID().uuidString + ".jpg"
+            let file = NCMBFile.file(withName: fileName, data: data) as! NCMBFile
+            file.saveInBackground(){ error in
+                if error != nil {
+                    print("ファイル作成失敗")
+                }
+            }
+            if let comment = commentTextView.text {
+                let tweet = Tweet(imageFileName: fileName, comment: comment)
+                tweet.save()
+            } else {
+                let tweet = Tweet(imageFileName: fileName, comment: "")
+                tweet.save()
+            }
+        }
+    }
+    
+    @objc func toTimeLine(sender: Any) {
+        let storyboard: UIStoryboard = self.storyboard!
+        let nextView = storyboard.instantiateViewController(withIdentifier: "navi")
+        self.present(nextView, animated: true, completion: nil)
 
+    }
+    
 }
