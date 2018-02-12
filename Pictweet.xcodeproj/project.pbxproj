@@ -23,7 +23,7 @@
 		CEB63C412026C2A700B21A64 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB63C402026C2A700B21A64 /* RegisterViewController.swift */; };
 		CEB63C432026C2BB00B21A64 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB63C422026C2BB00B21A64 /* User.swift */; };
 		CEB63C492026CC5F00B21A64 /* TimeLineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB63C482026CC5F00B21A64 /* TimeLineTableViewController.swift */; };
-		CEB63C4B2026D5BC00B21A64 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB63C4A2026D5BC00B21A64 /* StartViewController.swift */; };
+		CEB63C4B2026D5BC00B21A64 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB63C4A2026D5BC00B21A64 /* LoginViewController.swift */; };
 		DFCA2149FDF61478A10FA457 /* Pods_Pictweet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF058BCF891C73913BD811A /* Pods_Pictweet.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
@@ -49,7 +49,7 @@
 		CEB63C402026C2A700B21A64 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CEB63C422026C2BB00B21A64 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CEB63C482026CC5F00B21A64 /* TimeLineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewController.swift; sourceTree = "<group>"; };
-		CEB63C4A2026D5BC00B21A64 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		CEB63C4A2026D5BC00B21A64 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FBF058BCF891C73913BD811A /* Pods_Pictweet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pictweet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -113,7 +113,7 @@
 		CEB63C442026C2C800B21A64 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CEB63C4A2026D5BC00B21A64 /* StartViewController.swift */,
+				CEB63C4A2026D5BC00B21A64 /* LoginViewController.swift */,
 				CEB63C482026CC5F00B21A64 /* TimeLineTableViewController.swift */,
 				CEB63C402026C2A700B21A64 /* RegisterViewController.swift */,
 				CE1D2B1020299AD4003ADAA6 /* PostViewController.swift */,
@@ -294,7 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1D2B1120299AD4003ADAA6 /* PostViewController.swift in Sources */,
-				CEB63C4B2026D5BC00B21A64 /* StartViewController.swift in Sources */,
+				CEB63C4B2026D5BC00B21A64 /* LoginViewController.swift in Sources */,
 				CE2B3508202E0176008E183C /* PostedViewController.swift in Sources */,
 				CEB63C492026CC5F00B21A64 /* TimeLineTableViewController.swift in Sources */,
 				CEB63C432026C2BB00B21A64 /* User.swift in Sources */,
